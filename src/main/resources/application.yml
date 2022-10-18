@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: chaos-monkey
+chaos:
+  monkey:
+    enabled: true
+    watcher:
+      rest-controller: true
+    assaults:
+      latencyActive: true
+
+management:
+  endpoint:
+    chaosmonkey:
+      enabled: true
+
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - chaosmonkey
