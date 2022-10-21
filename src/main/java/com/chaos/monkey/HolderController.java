@@ -4,11 +4,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class RemittanceController {
+public class HolderController {
 
-    @GetMapping("/remittance")
-    public String remittance() {
-        return "송금";
+    @GetMapping("/holder")
+    public String holder() {
+        return "홍길동";
     }
 
 }
