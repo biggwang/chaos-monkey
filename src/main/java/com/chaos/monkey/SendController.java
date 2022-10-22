@@ -20,13 +20,19 @@ public class SendController {
 }
 
 class SendRequest {
+    private String receiverName;
     private int amount;
 
     public SendRequest() {
     }
 
+    public String getReceiverName() {
+        return receiverName;
+    }
+
     public int getAmount() {
         return amount;
     }
+
 }
 
