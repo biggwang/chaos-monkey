@@ -1,5 +1,6 @@
 package com.chaos.monkey;
 
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;

@@ -6,8 +6,16 @@ chaos:
     enabled: true
     watcher:
       rest-controller: true
+      component: false
     assaults:
       latencyActive: true
+      level: 1
+      exception:
+        type: org.springframework.web.client.RestClientException
+        method: <init>
+      exceptions-active: false
+#      watched-custom-services:
+#        - com.chaos.monkey.SimpleApiAdapter
 
 management:
   endpoint:

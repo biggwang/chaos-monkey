@@ -17,6 +17,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'de.codecentric:chaos-monkey-spring-boot:2.6.1'
     implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
